@@ -1,20 +1,19 @@
 <?php
 
-namespace App\View\Components\admin;
+namespace App\View\Components\admin\navbar;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Navbar extends Component
-
-
+class navbar-partial extends Component
+{
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        
+        //
     }
 
     /**
@@ -22,6 +21,6 @@ class Navbar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.admin.navbar');
+        return view('components..admin.navbar.navbar-partial');
     }
 }
