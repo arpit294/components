@@ -20,9 +20,9 @@
 
   <div class="layout-wrapper layout-content-navbar {{ $isMenu ? '' : 'layout-without-menu' }}">
     <div class="layout-container">
-      <x-admin.sidebar.sidebar />
+     <x-admin.sidebar />  
       <div class="layout-page">
-
+        <x-admin.navbar />
         <div class="content-wrapper">
           {{ $slot }}
           <div class="content-backdrop fade"></div>

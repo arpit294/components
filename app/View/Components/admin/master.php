@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 
 class Master extends Component
 {
-    public $isMenu;
+    public ?bool $isMenu;
 
     public function __construct($isMenu = true)
     {

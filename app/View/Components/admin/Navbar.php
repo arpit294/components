@@ -1,19 +1,24 @@
 <?php
 
-namespace App\View\Components\admin\sidebar;
+namespace App\View\Components\admin;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class sidebar extends Component
+class Navbar extends Component
 {
+    public $navbarDetached;
+
+    public $containerNav;
+
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->navbarDetached = false;
+        $this->containerNav = 'container-fluid';
     }
 
     /**
@@ -21,6 +26,6 @@ class sidebar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.admin.sidebar.sidebar');
+        return view('components.admin.navbar');
     }
 }
