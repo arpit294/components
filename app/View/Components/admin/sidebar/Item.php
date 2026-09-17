@@ -12,7 +12,7 @@ class Item extends Component
 
     public string $activeClass;
 
-    public string $iconClass;
+    public ?string $iconClass;
 
     public ?string $title;
 

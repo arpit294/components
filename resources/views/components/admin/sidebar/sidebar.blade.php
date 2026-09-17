@@ -19,10 +19,14 @@
     {{-- <x-admin.sititle="Dashboard">
 
       </x-admin.sidebar.item-nested> --}}
-    <x-admin.sidebar.item-nested title="Dashboard" active="true" icon="menu-icon icon-bas bx bx-bxs-dashboard">
-      <x-admin.sidebar.item url="" activeClass="true" iconclass="bx-analyse" title="Analytics" />
-
+    <x-admin.sidebar.item-nested title="Dashboard" active="true" icon="menu-icon icon-base bx bx-bxs-dashboard">
+      <x-admin.sidebar.item url="{{ url('/') }}" active="true" iconClass="bx-analyse" title="Analytics" />
     </x-admin.sidebar.item-nested>
+
+    <x-admin.sidebar.item url="{{ url('/') }}" active="true" iconClass="menu-icon icon-base bx bx-user"
+      title="Users" />
+
+
   </ul>
 
 </aside>

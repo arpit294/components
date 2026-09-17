@@ -1,8 +1,15 @@
+@props([
+    'url' => '',
+    'activeClass' => '',
+    'iconClass' => '',
+    'title' => '',
+])
 
-{{-- @dd($iconClass) --}}
-<li class="menu-item {{ $activeClass }}"></li>
-<a href="{{ $url }}" class="menu-link">
-  <i class="{{ $iconClass }}"></i>
-  <div>{{ $title }}</div>
-</a>
+<li class="menu-item {{ $activeClass }}">
+  <a href="{{ $url ?: 'javascript:void(0);' }}" class="menu-link">
+    @if (!empty($iconClass))
+      <i class="{{ $iconClass }}"></i>
+    @endif
+    <div>{{ $title }}</div>
+  </a>
 </li>

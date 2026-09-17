@@ -11,6 +11,9 @@
   <x-admin.style />
   <x-admin.meta />
 
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  @vite(['resources/assets/vendor/js/helpers.js'])
+  @vite(['resources/assets/js/config.js'])
 </head>
 
 <body>
