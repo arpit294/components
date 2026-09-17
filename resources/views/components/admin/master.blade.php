@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="layout-menu-fixed layout-compact" data-assets-path="{{ asset('/assets') . '/' }}" dir="ltr"
+  data-skin="default" data-base-url="{{ url('/') }}" data-framework="laravel" data-bs-theme="light"
+  data-template="vertical-menu-template">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <x-admin.style />
+  <x-admin.meta />
+
+</head>
+
+<body>
+
+  <div class="layout-wrapper layout-content-navbar {{ $isMenu ? '' : 'layout-without-menu' }}">
+    <div class="layout-container">
+      <x-admin.sidebar.sidebar />
+      <div class="layout-page">
+
+        <div class="content-wrapper">
+          {{ $slot }}
+          <div class="content-backdrop fade"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <x-admin.script />
+</body>
+
+</html>

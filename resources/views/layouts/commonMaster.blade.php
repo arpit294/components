@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en" class="layout-menu-fixed layout-compact" data-assets-path="{{ asset('/assets') . '/' }}" dir="ltr" data-skin="default" data-base-url="{{ url('/') }}" data-framework="laravel" data-bs-theme="light" data-template="vertical-menu-template">
 
 <head>
@@ -37,10 +37,13 @@
     @yield('layoutContent')
     <!--/ Layout Content -->
 
-    
+
 
     <!-- Include Scripts -->
     @include('layouts/sections/scripts')
 </body>
 
-</html>
+</html> --}}
+<x-admin.master>
+
+</x-admin.master>

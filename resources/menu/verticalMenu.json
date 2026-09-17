@@ -16,16 +16,6 @@
           "slug": "dashboard-analytics"
         },
         {
-          "url": "https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/dashboard/crm",
-          "name": "CRM",
-          "slug": "dashboard-crm",
-          "target": "_blank",
-          "badge": [
-            "label-primary fs-tiny",
-            "Pro"
-          ]
-        },
-        {
           "url": "https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/app/ecommerce/dashboard",
           "name": "eCommerce",
           "slug": "app-ecommerce-dashboard",
