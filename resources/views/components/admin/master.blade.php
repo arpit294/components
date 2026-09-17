@@ -28,11 +28,12 @@
 
           <x-admin.offcanvas />
 
-          {{ $slot }}
-          <div class="content-backdrop fade"></div>
+
+          <x-admin.cards {{ $slot }} <div class="content-backdrop fade">
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <x-admin.script />
