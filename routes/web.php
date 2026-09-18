@@ -45,8 +45,7 @@ use App\Http\Controllers\form_layouts\HorizontalForm;
 use App\Http\Controllers\tables\Basic as TablesBasic;
 
 // Main Page Route
-Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics');
-
+Route::get('/', [Analytics::class, 'index'])->name('dashboard-analytics')->middleware('auth');
 // layout
 Route::get('/layouts/without-menu', [WithoutMenu::class, 'index'])->name('layouts-without-menu');
 Route::get('/layouts/without-navbar', [WithoutNavbar::class, 'index'])->name('layouts-without-navbar');
@@ -107,16 +106,3 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
-
-// Test Routes for Authentication Components
-Route::get('/login-test', function () {
-    return view('test-login');
-});
-
-Route::get('/register-test', function () {
-    return view('test-register');
-});
-
-Route::get('/forget-password-test', function () {
-    return view('test-forget-password');
-});

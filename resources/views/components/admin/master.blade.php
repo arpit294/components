@@ -27,7 +27,7 @@
 
           {{-- <x-admin.authentication.login /> --}}
           {{-- <x-admin.authentication.register /> --}}
-          <x-admin.authentication.forget-password />
+          {{-- <x-admin.authentication.forget-password /> --}}
 
           {{-- <x-admin.modals />
 
