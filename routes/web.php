@@ -107,3 +107,16 @@ Route::get('/form/layouts-horizontal', [HorizontalForm::class, 'index'])->name('
 
 // tables
 Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic');
+
+// Test Routes for Authentication Components
+Route::get('/login-test', function () {
+    return view('test-login');
+});
+
+Route::get('/register-test', function () {
+    return view('test-register');
+});
+
+Route::get('/forget-password-test', function () {
+    return view('test-forget-password');
+});

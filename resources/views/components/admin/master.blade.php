@@ -24,12 +24,18 @@
       <div class="layout-page">
         <x-admin.navbar />
         <div class="content-wrapper">
-          <x-admin.modals />
+
+          {{-- <x-admin.authentication.login /> --}}
+          {{-- <x-admin.authentication.register /> --}}
+          <x-admin.authentication.forget-password />
+
+          {{-- <x-admin.modals />
 
           <x-admin.offcanvas />
 
 
-          <x-admin.cards {{ $slot }} <div class="content-backdrop fade">
+          <x-admin.cards>
+          </x-admin.cards> --}}
         </div>
       </div>
     </div>
