@@ -71,5 +71,10 @@ Fortify::registerView(function () {
 Fortify::requestPasswordResetLinkView(function () {
     return view('components.admin.authentication.forget-password');
 });
+
+// 4. Reset Password View
+Fortify::resetPasswordView(function ($request) {
+    return view('components.admin.authentication.reset-password', ['request' => $request]);
+});
     }
 }

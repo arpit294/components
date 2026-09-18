@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <x-admin.style />
-  <x-admin.meta />
+  <x-admin.block.style />
+  <x-admin.block.meta />
 
   <!-- Include Scripts for customizer, helper, analytics, config -->
   @vite(['resources/assets/vendor/js/helpers.js'])
@@ -29,20 +29,20 @@
           {{-- <x-admin.authentication.register /> --}}
           {{-- <x-admin.authentication.forget-password /> --}}
 
-          {{-- <x-admin.modals />
+          {{-- <x-admin.layout.modals />
 
-          <x-admin.offcanvas />
+          <x-admin.layout.offcanvas />
 
 
-          <x-admin.cards>
-          </x-admin.cards> --}}
+          <x-admin.layout.cards>
+          </x-admin.layout.cards> --}}
         </div>
       </div>
     </div>
   </div>
   </div>
 
-  <x-admin.script />
+  <x-admin.block.script />
 </body>
 
 </html>

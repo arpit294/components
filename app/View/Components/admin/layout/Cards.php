@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\admin\navbar;
+namespace App\View\Components\admin\layout;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class NavbarPartial extends Component
+class Cards extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class NavbarPartial extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.admin.navbar.navbar-partial');
+        return view('components.admin.layout.cards');
     }
 }
